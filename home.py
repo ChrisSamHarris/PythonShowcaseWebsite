@@ -14,7 +14,7 @@ st.set_page_config(page_title="Harris Showcase", page_icon="./images/icon.ico", 
 col1, col2 = st.columns([2, 2], gap="medium")
 with col1:  
    container1 = st.container()
-   container1.image("./images/rick_wink2.jpeg", use_column_width="always")
+   container1.image("./images/rick_wink2.jpeg", use_column_width="auto")
 
 with col2:
    container2 = st.container()
@@ -40,17 +40,16 @@ with col3:
       st.header(row["title"])
       st.write(row["description"])
       # st.image(image=f"""./images/{row["image"]}""", width=500)
-      st.image(image=f"./images/{row['image']}")
+      st.image(image=f"./images/{row['image']}", use_column_width="auto")
       st.write(f"[Source Code](%s)" % row["url"])
 
 with col4:
    for index,row in data_frame[10:].iterrows():
       st.header(row["title"])
       st.write(row["description"])
-      st.image(image=f"./images/{row['image']}")
+      st.image(image=f"./images/{row['image']}", use_column_width="auto")
       st.write(f"[Source Code](%s)" % row["url"])
    
-
 
 # with col3:
 #    container3a = st.container()
