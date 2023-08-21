@@ -27,12 +27,6 @@ st.info(page_info)
 ######################
 
 data_frame = pandas.read_csv("data.csv", sep=";")
-# for index, row in data_frame.iterrows():
-#    print(row["title"])])
-# num = 0 
-# for line_num, (index, row) in enumerate(data_frame.iterrows()):
-#    num +=1
-# print(num)
 
 col3, space_col, col4 = st.columns([2, 0.25, 2])
 with col3:
@@ -50,25 +44,3 @@ with col4:
       st.image(image=f"./images/{row['image']}", use_column_width="auto")
       st.write(f"[Source Code](%s)" % row["url"])
    
-
-# with col3:
-#    container3a = st.container()
-#    container3a.header("Test 3A")
-#    container3a.write("3A Sample Text Here")
-#    container3a.image(image="./images/1.png")
-
-#    container3b = st.container()
-#    container3b.header("Test 3B")
-#    container3b.write("3B Sample Text Here")
-#    container3b.image(image="./images/1.png")
-
-# with col4:
-#    container4a = st.container()
-#    container4a.header("Test 4A")
-#    container4a.write("4A Sample Text Here")
-#    container4a.image(image="./images/1.png")
-
-#    container4b = st.container()
-#    container4b.header("Test 4B")
-#    container4b.write("4B Sample Text Here")
-#    container4b.image(image="./images/1.png")
