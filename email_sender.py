@@ -29,3 +29,6 @@ def contact_me_email(contact_email, message):
     s.login(USERNAME, PASSWORD)
     s.sendmail(USERNAME, RECIEVER, msg.as_string())
     s.quit()
+
+if __name__ == "__main__":
+    contact_me_email("test@1233.uk", "testing")
