@@ -2,6 +2,7 @@ import smtplib
 import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+# https://docs.python.org/3/library/email.mime.html
 
 def contact_me_email(contact_email, message):
     # Secret values need to be added to perm environment variables
