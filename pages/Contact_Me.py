@@ -2,6 +2,7 @@ import streamlit as st
 import re
 from email_sender import contact_me_email
 
+# Reminder, at present you need to authetnicate to your Gmail account locally with email & password (Third-party apps and services)
 
 def is_valid_email(email):
     pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
@@ -55,5 +56,5 @@ if submitted and email_correct and message_valid:
     except: 
         submitted_message_placeholder.empty()
         st.write("Uanble to submit your request at this time. Please try again in a couple of minutes...")
-        st.write("If this issue persists please contact Chris directly through ### X ###")
+        st.write("##### TEST: Developer have you authenticated locally? ##### ")
         
